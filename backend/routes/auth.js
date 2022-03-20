@@ -58,8 +58,7 @@ const JWT_SECRET = "JustWalk$oy"; //Facilitate client and server communication s
   }
 );
 
-
-// ______________________________________________________LOGIN_____________________________________________________________
+// ___________________________________________________LOGIN_____________________________________________________
 
 // ROUTE2: Authenticate a User using: POST "/api/auth/login", No login required
 router.post("/login",[
