@@ -6,7 +6,8 @@ const NoteState = (props)=> {
        "name" : "Surk",
        "language" : "JS"
   }
-  const [first, setfirst] = useState(s1);
+  
+  const [state, setState] = useState(s1);
   const update = ()=> {
       setTimeout(() => {
           setState({
