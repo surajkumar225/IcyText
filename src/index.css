@@ -16,6 +16,59 @@ i{
   cursor: pointer;
   color: gray;
 }
+i:hover{
+  color: white;
+}
 h2{
   text-decoration: underline rgba(128, 128, 128, 0.452);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  background-color: black;
+}
+.card-body{
+  background-color: black;
+}
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.658);
+  border-radius: 10px;
+}
+.card-title{
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+.card-text{
+  color: rgb(25, 211, 25);
+  font-family: 'Shadows Into Light', cursive;
+}
+.form-label{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+.form-check-label{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+.submit{
+  border: 1px solid rgba(0, 128, 0, 0.568);
+  border-radius: 3px;
+  color: rgba(0, 128, 0, 0.808);
+  background-color: black;
+  padding: 5px 13px;
+  font-family: 'Patrick Hand', cursive;
+}
+.submit:hover{
+  background-color: rgba(0, 128, 0, 0.76);
+  color: rgba(255, 255, 255, 0.925);
+}
+
+#hh{
+  color: rgb(26, 228, 26);
+  font-family: 'Shadows Into Light', cursive;
 }

@@ -16,7 +16,7 @@ function App() {
     <NoteState>
     <Router>  
     <Navbar/>
-    <Alert message="Going Great"/>
+    <Alert message="Going Great.."/>
     <div className="container">
     <Switch>
           <Route exact path="/">
