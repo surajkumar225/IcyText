@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+i{
+  cursor: pointer;
+  color: gray;
+}
+h2{
+  text-decoration: underline rgba(128, 128, 128, 0.452);
+}

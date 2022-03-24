@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { Home } from './components/Home';
 import About from './components/About';
+import { Alert } from './components/Alert';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +16,7 @@ function App() {
     <NoteState>
     <Router>  
     <Navbar/>
+    <Alert message="Going Great"/>
     <div className="container">
     <Switch>
           <Route exact path="/">
