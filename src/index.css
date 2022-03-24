@@ -20,7 +20,7 @@ i:hover{
   color: white;
 }
 h2{
-  text-decoration: underline rgba(128, 128, 128, 0.452);
+  /* text-decoration: underline rgba(128, 128, 128, 0.452); */
   color: white;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 4px;
