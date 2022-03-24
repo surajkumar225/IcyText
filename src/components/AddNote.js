@@ -13,7 +13,6 @@ const AddNote = () => {
 
     const onChange = (e) => {
         setNote({...note, [e.target.name]: e.target.value })
-
     }
   return (
     
@@ -22,7 +21,7 @@ const AddNote = () => {
       <form className="my-3">
         <div className="mb-3">
           <label htmlFor="title" className="form-label">
-            Add Title
+            Title
           </label>
           <input
             type="text"
@@ -38,7 +37,7 @@ const AddNote = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="description" className="form-label">
-            Add Description
+            Description
           </label>
           <input
             type="text"
@@ -55,7 +54,7 @@ const AddNote = () => {
           </label>
         </div>
         <button type="submit" className="submit" onClick={handleClick}>
-          Submit
+          Add Note
         </button>
       </form>
     </div>
