@@ -1,16 +1,16 @@
 import { useState } from "react";
 import NoteContext from "./noteContext";
 
-const NoteState = (props)=> {
+  const NoteState = (props)=> {
   const host = "http://localhost:5000"
   const notesInitial =  []
- const [notes, setNotes] = useState(notesInitial);
+  const [notes, setNotes] = useState(notesInitial);
 
 
  // Get all Notes
  const getNotes = async () => {
   // API Call
-  const response = await fetch(`${host}/api/notes/fetchallnotes`, {
+   const response = await fetch(`${host}/api/notes/fetchallnotes`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -24,8 +24,7 @@ const NoteState = (props)=> {
 }
 
  // Add a Note
-   const addNote = async (title, description, tag) => {
-
+  const addNote = async (title, description, tag) => {
     // API Call
     const response = await fetch(`${host}/api/notes/addnote`, {
       method: 'POST',
@@ -51,11 +50,22 @@ const NoteState = (props)=> {
    }
 
  // Delete a Note
-   const deleteNote = (id) => {
+   const deleteNote = async(id) => {
+     // API Call
+     const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjIzNTk4ODQzN2QwNjk1YzE0Mjg0ZGU3In0sImlhdCI6MTY0ODEzNTMwNH0.64nTi5eNsH5bD8wzuxB43t_tXngZUi-MUqX6uWzVL8c"
+      },
+      
+    });
+    const json = response.json();
+    console.log(json)
+
      console.log("Delete" + id);
      const newNotes = notes.filter((note) => {return note._id!==id})
-     setNotes(newNotes)
-     
+     setNotes(newNotes)     
    }
 
  // Edit a Note
@@ -71,7 +81,6 @@ const NoteState = (props)=> {
     });
     const json = response.json();
   
-
      // Logic to edit in client
      for (let index = 0; index < notes.length; index++) {
        const element = notes[index];
@@ -90,6 +99,5 @@ const NoteState = (props)=> {
          </NoteContext.Provider>
       )
 }
-
 
 export default NoteState;
