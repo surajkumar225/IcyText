@@ -35,19 +35,11 @@ import NoteContext from "./noteContext";
       body: JSON.stringify({title, description, tag}) 
     });
 
-    const json = await response.json();
-    console.log(json);
+    const note = await response.json();
+    setNotes(notes.concat(note))   // Concat returns new array
+    // console.log(json);
 
-     const note = {
-      "_id": "6236f2acdd794f717e8c312d",
-      "user": "6235988437d0695c14284de7",
-      "title": title,
-      "description": description,
-      "tag": tag,
-      "date": "2022-03-20T09:23:56.867Z",
-      "__v": 0
-    };
-     setNotes(notes.concat(note))   // Concat returns new array
+    //  const note = json; 
 
    }
 
