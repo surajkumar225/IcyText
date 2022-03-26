@@ -34,7 +34,9 @@ import NoteContext from "./noteContext";
       },
       body: JSON.stringify({title, description, tag}) 
     });
-    // const json = response.json();
+
+    const json = await response.json();
+    console.log(json);
 
      const note = {
       "_id": "6236f2acdd794f717e8c312d",
@@ -72,24 +74,28 @@ import NoteContext from "./noteContext";
    const editNote = async (id, title, description, tag) => {
      // API Call
      const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
-      method: 'POST',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjIzNTk4ODQzN2QwNjk1YzE0Mjg0ZGU3In0sImlhdCI6MTY0ODEzNTMwNH0.64nTi5eNsH5bD8wzuxB43t_tXngZUi-MUqX6uWzVL8c"
       },
       body: JSON.stringify({title, description, tag}) 
     });
-    const json = response.json();
+    const json = await response.json();
   
+
+    let newNotes = JSON.parse(JSON.stringify(notes))
      // Logic to edit in client
-     for (let index = 0; index < notes.length; index++) {
-       const element = notes[index];
+     for (let index = 0; index < newNotes.length; index++) {
+       const element = newNotes[index];
        if(element._id === id){
-         element.title = title;
-         element.description = description;
-         element.tag = tag;
-       }       
-     }    
+        newNotes[index].title = title;
+        newNotes[index].description = description;
+        newNotes[index].tag = tag;
+        break;       
+       }
+     }   
+       setNotes(newNotes); 
     }
   
       return (
