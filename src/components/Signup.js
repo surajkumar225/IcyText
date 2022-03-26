@@ -30,8 +30,6 @@ const onChange = (e)=>{
     setCredentials({...credentials, [e.target.name]: e.target.value})
 }
 
-
-
   return (
     <div className="conatiner">
       <form onSubmit={handleSubmit}>
@@ -42,18 +40,20 @@ const onChange = (e)=>{
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Email address</label>
     <input type="email" className="form-control" id="email" name="email" onChange={onChange} aria-describedby="emailHelp"/>
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+    <div id="emailHelp" className="form-text">We'll never share your email with anyone else</div>
   </div>
   <div className="mb-3">
     <label htmlFor="password" className="form-label">Password</label>
     <input type="password" className="form-control" id="password" name="password" onChange={onChange} minLength={5} required />
+    <div id="passwordHelp" className="form-text">Password must be atleast 5 characters</div>
+
   </div>
   <div className="mb-3">
     <label htmlFor="cpassword" className="form-label">Confirm Password</label>
     <input type="password" className="form-control" id="cpassword" name="cpassword" onChange={onChange}  minLength={5} required/>
   </div>
   
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-danger">Submit</button>
 </form>
     </div>
   )

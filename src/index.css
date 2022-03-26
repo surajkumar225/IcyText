@@ -46,8 +46,8 @@ body{
   font-family: 'Shadows Into Light', cursive;
 }
 .card-text{
-  /* color: rgb(25, 211, 25); */
-  color: rgb(236, 32, 32);
+  color: rgb(25, 211, 25);
+  /* color: rgb(236, 32, 32); */
   font-family: 'Shadows Into Light', cursive;
 }
 .form-label{
@@ -72,6 +72,49 @@ body{
   color: rgba(255, 255, 255, 0.925);
 }
 
+.login{
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.253);
+  padding: 8px 13px;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
+}
+.login:hover{
+   background-color: rgba(255, 255, 255, 0.185);
+   color: white;
+}
+
+.signup{
+  border: 1px solid white;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+  padding: 8px 13px;
+  font-family: 'Patrick Hand', cursive;
+  text-decoration: none;
+}
+.signup:hover{
+  background-color: rgba(255, 255, 255, 0.918);
+  color: black;
+}
+.container22{
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #hh{
   color: rgb(26, 228, 26);
   font-family: 'Shadows Into Light', cursive;
@@ -91,5 +134,32 @@ body{
 }
 #edescription{
   color: rgb(28, 156, 28);
+  font-family: 'Shadows Into Light', cursive;  
+}
+#epassword{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#emailHelp{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#passwordHelp{
+  font-family: 'Patrick Hand', cursive;
+}
+#email{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#password{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#name{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#title{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#description{
+  font-family: 'Shadows Into Light', cursive;  
+}
+#tag{
   font-family: 'Shadows Into Light', cursive;  
 }

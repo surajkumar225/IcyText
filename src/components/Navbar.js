@@ -8,6 +8,7 @@ const Navbar = ()=> {
   }, [location]);
 
   return (
+    <div className="container22">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <Link className="navbar-brand mx-2" to="/" id="hh">IcyText</Link>
@@ -25,12 +26,15 @@ const Navbar = ()=> {
         
       </ul>
       <form className="d-flex">
-        <Link className="btn btn-success mx-3" to="/login" role="button"> Login </Link>
-        <Link className="btn btn-success mx-2" to="/signup" role="button"> Signup </Link>
+        <Link className="login mx-2" to="/login" role="button"> Login </Link>
+        {/* <Link className="btn btn-success mx-3" to="/login" role="button"> Login </Link> */}
+        <Link className="signup mx-2" to="/signup" role="button"> Signup </Link>
+        {/* <Link className="btn btn-success mx-2" to="/signup" role="button"> Signup </Link> */}
       </form>
     </div>
   </div>
 </nav>
+</div>
     
   )
 }
