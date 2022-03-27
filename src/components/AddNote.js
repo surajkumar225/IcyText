@@ -33,9 +33,11 @@ const AddNote = (props) => {
             value={note.title}         
             onChange={onChange}
             minLength={5} required
+            placeholder="Add a note"
           />
           <div id="emailHelp" className="form-text">
-            We'll never share your data with anyone else.
+            {/* We'll never share your data with anyone else. */}
+            Make sure that your title must contain atleast 5 characters
           </div>
         </div>
 

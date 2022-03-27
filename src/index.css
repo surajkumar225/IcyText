@@ -173,7 +173,7 @@ h4{
   letter-spacing: 7px;
   font-weight: 900;
   margin-top: 20vh;
-  margin-left: 4vw;
+  margin-left: 6vw;
 }
 
 .loginh2{
@@ -186,4 +186,60 @@ h4{
   color: rgb(16, 194, 194);
   letter-spacing: 6px;
   font-weight: 900; 
+}
+hr{
+  color: rgb(23, 192, 192);
+}
+.connect{
+  border: 1px solid white;
+  border-radius: 3px;
+  color: rgba(0, 128, 0, 0.808);
+  background-color: black;
+  padding: 5px 13px;
+  font-family: 'Patrick Hand', cursive;
+  transition: all 0.2s ease-in;
+}
+.connect1{
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: black;
+  padding: 5px 13px;
+  font-family: 'Patrick Hand', cursive;
+  transition: all 0.2s ease-in;
+}
+.connect2{
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: black;
+  padding: 5px 13px;
+  font-family: 'Patrick Hand', cursive;
+  transition: all 0.2s ease-in;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(24, 185, 185);
+}
+a:hover{
+  color: white;
+}
+.Instagram{
+  color: rgb(180, 51, 72);
+}
+.LinkedIn{
+  color: rgb(86, 86, 230);
+}
+.Abouth5{
+  color: rgba(255, 255, 255, 0.404);
+  font-family: 'Patrick Hand', cursive;
+  margin-left: 5vw;
+}
+#insta{
+  color: rgb(235, 141, 156);
+}
+#twit{
+  color:rgb(24, 185, 185);
+}
+#linkIn{
+  color: white;
 }
