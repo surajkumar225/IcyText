@@ -169,21 +169,20 @@ body{
 }
 h4{
   color: white;
-  /* font-family: 'Shadows Into Light', cursive;   */
   font-family: 'Oswald', sans-serif;
   letter-spacing: 7px;
   font-weight: 900;
-  margin-top: 32vh;
+  margin-top: 20vh;
   margin-left: 4vw;
 }
 
-#loginh2{
+.loginh2{
   color: rgb(16, 194, 194);
   letter-spacing: 7px;
   font-weight: 900;
   border-bottom: 700px;
 }
-#signuph2{
+.signuph2{
   color: rgb(16, 194, 194);
   letter-spacing: 6px;
   font-weight: 900; 

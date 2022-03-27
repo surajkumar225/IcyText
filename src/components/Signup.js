@@ -23,7 +23,7 @@ const Signup = (props) => {
         props.showAlert("Account Created SuccessFully", "Success")
       }
       else{
-          props.showAlert("Invalid Credentials", "danger")
+          props.showAlert("Invalid Credentials Or User Already Exists", "danger")
       }
 }
 
@@ -33,7 +33,7 @@ const onChange = (e)=>{
 
   return (
     <div className="conatiner">
-      <h2 id="signuph2">Create an account to use IcyText</h2>
+      <h2 className="signuph2 my-2">Create an account to use IcyText</h2>
       <form  className="Signupform my-3" onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="name" className="form-label">Name </label>

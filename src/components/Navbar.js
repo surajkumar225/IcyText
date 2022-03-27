@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import {Link, useLocation, useHistory} from "react-router-dom";
-// import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Navbar = ()=> {
   let history = useHistory();
@@ -14,7 +13,6 @@ const Navbar = ()=> {
   }, [location]);
 
   return (
-    // <div className="container22">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <Link className="navbar-brand mx-2" to="/" id="hh">IcyText</Link>
@@ -38,9 +36,8 @@ const Navbar = ()=> {
     </div>
   </div>
 </nav>
-// </div>
     
   )
-  }
+}
 
 export default Navbar

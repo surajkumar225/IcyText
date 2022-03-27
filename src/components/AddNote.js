@@ -52,6 +52,9 @@ const AddNote = (props) => {
             onChange={onChange}
             minLength={5} required
           />
+           <div id="emailHelp" className="form-text">
+            Make sure that your description must contain atleast 5 characters
+          </div>
         </div>
 
         <div className="mb-3">
