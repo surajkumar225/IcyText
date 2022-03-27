@@ -1,14 +1,20 @@
 import React, {useEffect} from 'react'
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useHistory} from "react-router-dom";
+// import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Navbar = ()=> {
+  let history = useHistory();
+  const handleLogout = ()=> {
+    localStorage.removeItem('token')
+    history.push('/login');
+  }
   let location = useLocation();
   useEffect(() => {
     console.log(location.pathname)
   }, [location]);
 
   return (
-    <div className="container22">
+    // <div className="container22">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <Link className="navbar-brand mx-2" to="/" id="hh">IcyText</Link>
@@ -25,18 +31,16 @@ const Navbar = ()=> {
         </li>
         
       </ul>
-      <form className="d-flex">
+      {!localStorage.getItem('token')?<form className="d-flex"> 
         <Link className="login mx-2" to="/login" role="button"> Log in </Link>
-        {/* <Link className="btn btn-success mx-3" to="/login" role="button"> Login </Link> */}
-        <Link className="signup mx-2" to="/signup" role="button"> Sign up </Link>
-        {/* <Link className="btn btn-success mx-2" to="/signup" role="button"> Signup </Link> */}
-      </form>
+        <Link className="signup mx-2" to="/signup" role="button"> Sign up </Link>}
+      </form>: <button onClick={handleLogout} className="logout mx-2">Logout <i className="fa-solid fa-arrow-right-from-bracket" id="logoutarrow"></i></button>}
     </div>
   </div>
 </nav>
-</div>
+// </div>
     
   )
-}
+  }
 
 export default Navbar

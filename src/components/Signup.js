@@ -33,7 +33,8 @@ const onChange = (e)=>{
 
   return (
     <div className="conatiner">
-      <form onSubmit={handleSubmit}>
+      <h2 id="signuph2">Create an account to use IcyText</h2>
+      <form  className="Signupform my-3" onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="name" className="form-label">Name </label>
     <input type="text" className="form-control" id="name" name="name" onChange={onChange} aria-describedby="emailHelp"/>
@@ -54,7 +55,7 @@ const onChange = (e)=>{
     <input type="password" className="form-control" id="cpassword" name="cpassword" onChange={onChange}  minLength={5} required/>
   </div>
   
-  <button type="submit" className="btn btn-danger">Submit</button>
+  <button type="submit" className="submit">Submit</button>
 </form>
     </div>
   )

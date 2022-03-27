@@ -19,8 +19,8 @@ const Login = (props) => {
         if (json.success){
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 
-            history.push("/");
             props.showAlert("Logged In SuccessFully", "success")
+            history.push("/");
         }
         else{
             props.showAlert("Invalid Details", "danger")
@@ -33,7 +33,8 @@ const Login = (props) => {
 
     return (
         <div>
-            <form  onSubmit={handleSubmit}>
+            <h2 id="loginh2">Login to your account</h2>
+            <form className="Loginform my-3" onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>
                     <input type="email" className="form-control" value={credentials.email} onChange={onChange} id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email" />
@@ -45,7 +46,7 @@ const Login = (props) => {
                     <div id="passwordHelp" className="form-text">Password must be atleast 5 characters</div>
                 </div>
 
-                <button type="submit" className="btn btn-danger">Submit</button>
+                <button type="submit" className="submit">Submit</button>
             </form>
         </div>
     )
