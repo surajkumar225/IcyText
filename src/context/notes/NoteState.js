@@ -37,10 +37,6 @@ import NoteContext from "./noteContext";
 
     const note = await response.json();
     setNotes(notes.concat(note))   // Concat returns new array
-    // console.log(json);
-
-    //  const note = json; 
-
    }
 
  // Delete a Note
@@ -57,9 +53,8 @@ import NoteContext from "./noteContext";
     const json = response.json();
     console.log(json)
 
-    //  console.log("Delete" + id);
-     const newNotes = notes.filter((note) => {return note._id!==id})
-     setNotes(newNotes)     
+    const newNotes = notes.filter((note) => {return note._id!==id})
+    setNotes(newNotes)     
    }
 
  // Edit a Note

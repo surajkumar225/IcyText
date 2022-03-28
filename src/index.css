@@ -227,7 +227,7 @@ a:hover{
   color: rgb(180, 51, 72);
 }
 .LinkedIn{
-  color: rgb(86, 86, 230);
+  color: rgb(114, 114, 209);
 }
 .Abouth5{
   color: rgba(255, 255, 255, 0.404);
@@ -242,4 +242,28 @@ a:hover{
 }
 #linkIn{
   color: white;
+}
+
+.conatinerrr{
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;  
+}
+
+@media (max-width: 500px){
+  #abouth4{
+    font-size: 20px;
+    letter-spacing: 2px;    
+  }
+  #twitt{
+    color: aliceblue;
+    margin: 27px;
+  }
+  .signuph2{
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+}
+.contAbout{
+  background-image: url('https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true');
 }

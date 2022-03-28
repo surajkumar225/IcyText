@@ -9,7 +9,7 @@ const AddNote = (props) => {
         e.preventDefault();
         addNote(note.title, note.description, note.tag);
         setNote({title: "", description: "", tag: ""})
-        props.showAlert("Added Successfully", "light"); 
+        props.showAlert("Added Successfully", "primary"); 
     }
 
     const onChange = (e) => {
@@ -32,13 +32,9 @@ const AddNote = (props) => {
             aria-describedby="emailHelp"
             value={note.title}         
             onChange={onChange}
-            minLength={5} required
-            placeholder="Add a note"
+            minLength={2} required
+            placeholder="Add a title"
           />
-          <div id="emailHelp" className="form-text">
-            {/* We'll never share your data with anyone else. */}
-            Make sure that your title must contain atleast 5 characters
-          </div>
         </div>
 
         <div className="mb-3">
@@ -80,7 +76,7 @@ const AddNote = (props) => {
             Confirm
           </label>
         </div>
-        <button  disabled={note.title.length<5 || note.description.length<5} type="submit" className="submit" onClick={handleClick}>
+        <button  disabled={note.title.length<2 || note.description.length<5} type="submit" className="submit" onClick={handleClick}>
          Add Note
         </button>
       </form>

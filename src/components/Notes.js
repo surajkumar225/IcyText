@@ -14,7 +14,6 @@ const Notes = (props) => {
     }
     else{
       history.push("/login")
-
     }
     // eslint-disable-next-line
   }, []);
@@ -87,7 +86,7 @@ const Notes = (props) => {
                     value={note.etitle}
                     aria-describedby="emailHelp"
                     onChange={onChange}
-                    minLength={5} required
+                    minLength={2} required
                   />
                 </div>
 
@@ -128,11 +127,11 @@ const Notes = (props) => {
               ref={refClose}
                 type="button"
                 className="btn btn-secondary"
-                data-bs-dismiss="modal"
+                data-bs-dismiss="modal"             
               >
                 Close
               </button>
-              <button disabled={note.etitle.length<5 || note.edescription.length<5} onClick={handleClick} type="button" className="btn btn-success">
+              <button disabled={note.etitle.length<2 || note.edescription.length<5} onClick={handleClick} type="button" className="btn btn-success">
                 Update Note
               </button>
             </div>
@@ -142,8 +141,8 @@ const Notes = (props) => {
 
       <div className="row my-3 mx-1">
         <h2>Your Notes</h2>
-        <div className="conatiner">
-        {notes.length===0 && "No notes to display"}
+        <div className="conatinerrr my-4">
+        {notes.length===0 && "No notes to display..."}
         </div>
         {notes.map((note) => {
           return (
