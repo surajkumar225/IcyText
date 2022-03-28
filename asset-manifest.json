@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IcyText/static/css/main.2547e509.css",
+    "main.js": "/IcyText/static/js/main.d2582197.js",
+    "index.html": "/IcyText/index.html",
+    "main.2547e509.css.map": "/IcyText/static/css/main.2547e509.css.map",
+    "main.d2582197.js.map": "/IcyText/static/js/main.d2582197.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2547e509.css",
+    "static/js/main.d2582197.js"
+  ]
+}
