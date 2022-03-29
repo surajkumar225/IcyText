@@ -8,8 +8,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 i{
@@ -20,7 +19,7 @@ i:hover{
   color: white;
 }
 h2{
-  /* text-decoration: underline rgba(128, 128, 128, 0.452); */
+  text-decoration: underline rgba(128, 128, 128, 0.452);
   color: white;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 4px;
@@ -31,7 +30,6 @@ h2{
 }
 body{
   background-color: black;
-  /* background-color: rgba(10, 10, 53, 0.904); */
 }
 .card-body{
   background-color: black;

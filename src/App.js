@@ -8,7 +8,8 @@ import Alert  from './components/Alert';
 import NoteState from './context/notes/NoteState';
 import { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as HashRouter,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -27,7 +28,7 @@ function App() {
   return (
     <>  
     <NoteState>
-    <Router>  
+    <HashRouter> 
     <Navbar/>
     <Alert alert={alert} />
     <div className="container">
@@ -47,7 +48,7 @@ function App() {
          
         </Switch>
         </div>
-        </Router>  
+        </HashRouter>  
         </NoteState>
     </>
   );
