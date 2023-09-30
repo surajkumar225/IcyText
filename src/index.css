@@ -29,7 +29,7 @@ h2{
   justify-content: center;
 }
 body{
-  background-color: black;
+  background-color: rgb(192, 37, 37);
 }
 .card-body{
   background-color: black;
@@ -175,18 +175,46 @@ h4{
 }
 
 .loginh2{
-  color: rgb(16, 194, 194);
+  /* color: rgb(16, 194, 194); */
   letter-spacing: 7px;
   font-weight: 900;
   border-bottom: 700px;
 }
+
+.Loginform{
+  background-color: rgb(41, 44, 41);
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+  margin-left: 26%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  
+
+}
 .signuph2{
-  color: rgb(16, 194, 194);
+  /* color: rgb(16, 194, 194); */
   letter-spacing: 6px;
   font-weight: 900; 
 }
+
+.Signupform{
+  background-color: rgb(41, 44, 41);
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26%;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
 hr{
   color: rgb(23, 192, 192);
+}
+
+.addnotecontainer{
+  background-color: rgb(43, 45, 43);
+  padding: 10px 10px;
+  border: 1px solid white;
 }
 .connect{
   border: 1px solid white;
